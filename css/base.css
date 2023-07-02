@@ -530,7 +530,7 @@ img {
 --------------------------------------------------------------- */
 @media screen and (max-width:1024px) {
 	.row{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 	}
 
