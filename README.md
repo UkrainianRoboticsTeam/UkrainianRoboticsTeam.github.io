@@ -1,4 +1,4 @@
-# FIRST Global Challenge Team Ukraine
+# FIRST Global Challenge Team Ukraine (Ukrainian Robotics Team)
 
 Welcome to the **FIRST Global Challenge Team Ukraine** website! This README provides an overview of the site, 
 including its features, and general information about our team.
