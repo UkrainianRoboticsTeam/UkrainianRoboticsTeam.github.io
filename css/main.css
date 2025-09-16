@@ -2607,3 +2607,238 @@ footer .social-links li:first-child {
 	position: relative;
 	right: -5px;
 }
+
+/**
+/* Modern Achievements Slider Styles
+/* =================================================================== */
+
+#testimonials .testimonials-container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Slider Wrapper */
+.achievements-slider-wrapper {
+	position: relative;
+	margin-top: 48px;
+	overflow: hidden;
+}
+
+/* Slides Container */
+.slides-container {
+	display: flex;
+	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Individual Slide */
+.achievement-slide {
+	min-width: 100%;
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+
+/* Achievement Content */
+.achievement-content {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 40px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* Achievement Image */
+.achievement-image {
+	flex-shrink: 0;
+}
+
+.achievement-image img {
+	width: 144px;
+	height: 144px;
+	border-radius: 50%;
+	border: 6px solid #000;
+	object-fit: cover;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Achievement Info */
+.achievement-info {
+	flex: 1;
+	color: #000;
+}
+
+.achievement-info h3 {
+	font: 24px/30px "raleway-heavy", sans-serif;
+	color: #000;
+	margin: 0 0 12px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+.achievement-info .position {
+	display: block;
+	font: 16px/24px "raleway-bold", sans-serif;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 12px;
+}
+
+.achievement-info .description {
+	font: 14px/24px "merriweather-regular", serif;
+	color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+}
+
+/* Arrow Navigation */
+.slider-arrows {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px;
+	pointer-events: none;
+	z-index: 10;
+}
+
+.arrow-btn {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.4);
+	border: 2px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	pointer-events: all;
+	font-size: 18px;
+	outline: none;
+}
+
+.arrow-btn:hover {
+	background: rgba(0, 0, 0, 0.6);
+	transform: scale(1.1);
+	border-color: rgba(255, 255, 255, 0.4);
+}
+
+.arrow-btn:active {
+	transform: scale(0.95);
+}
+
+.arrow-btn i {
+	pointer-events: none;
+}
+
+/* Navigation Dots */
+.slider-nav {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 48px;
+	padding-bottom: 12px;
+}
+
+.nav-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.3);
+	border: 2px solid transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	outline: none;
+	padding: 0;
+}
+
+.nav-dot:hover {
+	background: rgba(0, 0, 0, 0.5);
+	transform: scale(1.2);
+}
+
+.nav-dot.active {
+	background: #0C6DFF;
+	transform: scale(1.3);
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Slider */
+@media only screen and (max-width: 768px) {
+	.achievement-content {
+		flex-direction: column;
+		text-align: center;
+		padding: 30px 20px;
+		gap: 20px;
+	}
+
+	.achievement-slide {
+		padding: 0 20px;
+	}
+
+	.achievement-image img {
+		width: 100px;
+		height: 100px;
+		border-width: 4px;
+	}
+
+	.achievement-info h3 {
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.achievement-info .position {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.achievement-info .description {
+		font-size: 13px;
+		line-height: 22px;
+	}
+
+	.arrow-btn {
+		width: 40px;
+		height: 40px;
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.achievement-content {
+		padding: 25px 15px;
+	}
+
+	.slider-arrows {
+		display: none; /* Hide arrows on small screens */
+	}
+
+	.slider-nav {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.achievement-slide {
+		padding: 0 10px;
+	}
+
+	.achievement-image img {
+		width: 80px;
+		height: 80px;
+	}
+
+	.achievement-info h3 {
+		font-size: 18px;
+	}
+
+	.achievement-info .description {
+		font-size: 12px;
+		line-height: 20px;
+	}
+}
